@@ -25,7 +25,7 @@ RegisterNetEvent('qb-taxi:server:NpcPay', function(Payment)
                 Player.Functions.AddMoney('cash', Payment)
             end
             local chance = math.random(1, 100)
-            if chance < 26 then
+            if chance < Config.CryptoChance then
                 Player.Functions.AddItem('cryptostick', 1, false)
                 TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['cryptostick'], 'add')
             end
