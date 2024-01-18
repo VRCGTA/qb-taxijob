@@ -20,7 +20,7 @@ Config = {
         ["defaultPrice"] = 250.0, -- price per mile
         ["startingPrice"] = 100  -- static starting price
     },
-    CryptoChance = 10 -- get cryptostick chance %
+    CryptoChance = 10, -- get cryptostick chance %
 
     Location = vector3(909.5, -177.35, 74.22), -- map blip position
     parkLocation = vector3(909.5, -177.35, 74.22), -- vehicle garage location
