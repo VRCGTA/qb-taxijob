@@ -22,7 +22,7 @@ RegisterNetEvent('qb-taxi:server:NpcPay', function(Payment)
             if Config.Management then
                 exports['okokBanking']:AddMoney('taxi', Payment, 'Customer payment')
             else
-                Player.Functions.AddMoney('cash', Payment)
+                Player.Functions.AddMoney('cash', Payment, 'taxi payout')
             end
             local chance = math.random(1, 100)
             if chance < Config.CryptoChance then
