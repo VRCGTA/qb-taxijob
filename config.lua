@@ -1,6 +1,6 @@
 Config = {
 
-    jobRequired = "taxi",
+    jobRequired = "crazytaxi",
 
     Management = false, -- if true, the money gained from the trips, will go to the boss menu funds
 
@@ -17,8 +17,8 @@ Config = {
     },
 
     Meter = {
-        ["defaultPrice"] = 250.0, -- price per mile
-        ["startingPrice"] = 100  -- static starting price
+        ["defaultPrice"] = 250*7, -- price per mile
+        ["startingPrice"] = 100*7  -- static starting price
     },
     CryptoChance = 10, -- get cryptostick chance %
 

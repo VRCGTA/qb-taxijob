@@ -24,11 +24,11 @@ RegisterNetEvent('qb-taxi:server:NpcPay', function(Payment)
             else
                 Player.Functions.AddMoney('cash', Payment, 'taxi payout')
             end
-            local chance = math.random(1, 100)
-            if chance < Config.CryptoChance then
-                Player.Functions.AddItem('cryptostick', 1, false)
-                TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['cryptostick'], 'add')
-            end
+            -- local chance = math.random(1, 100)
+            -- if chance < Config.CryptoChance then
+            --     Player.Functions.AddItem('cryptostick', 1, false)
+            --     TriggerClientEvent('inventory:client:ItemBox', src, QBCore.Shared.Items['cryptostick'], 'add')
+            -- end
         else
             DropPlayer(src, 'Attempting To Exploit')
         end
